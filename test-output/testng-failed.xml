@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Dataprovider Prallel Test]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="Data Provider Test(failed)">
+    <classes>
+      <class name="org.example.dataprovider.DataProviderParallelTests">
+        <methods>
+          <include name="tearingDownDriver"/>
+          <include name="setUp"/>
+          <include name="invalidLoginTest" invocation-numbers="0 2"/>
+        </methods>
+      </class> <!-- org.example.dataprovider.DataProviderParallelTests -->
+    </classes>
+  </test> <!-- Data Provider Test(failed) -->
+</suite> <!-- Failed suite [Dataprovider Prallel Test] -->
